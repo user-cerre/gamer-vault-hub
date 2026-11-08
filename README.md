@@ -7,3 +7,5 @@ CheapShark API (Videogames Sales):[https://www.cheapshark.com/api/1.0/deals](htt
 Proxy CORS Público (Rrequired to consume ProtonDB without backend):[https://corsproxy.io/?url=](https://corsproxy.io/?url=)
 
 ProtonDB API (Linux Compatibility games):[https://www.protondb.com/api/v1/reports/summaries/](https://www.protondb.com/api/v1/reports/summaries/){steamAppID}.json
+
+##PROJECT VERSION : 1.1
