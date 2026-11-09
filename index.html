@@ -7,33 +7,38 @@
         <title>GamerVaultHub</title>
         <link rel = "stylesheet" href = "src/css/style.css">
     </head>
-        <body>
-            <nav>This is the upper part of the navigator where it will be the search and filter struff</nav>
-            <header>This is the first of The Gamer Vault Hub</header>
-            <input type= "checkbox" id = "burger">
-            <input type = "text" id = "search">
-            <input type = "range" id="maxPrice">
-            <input type="button" id="darkMode">
-            <label for = "burger">☰</label>
-            <main>
-                <section id="games-grid"></section>
-                <dialog>Information related with ProtonDB
-                    <input type="button" id="closeInfoProtonDB">
-                    <div>
+    <body>
+        <header>
+            <h1>GamerVault Hub</h1>
+            <nav aria-label="Main navigation">
+                <input type="checkbox" id="burger">
+                <label for="burger" class="burger-icon">☰</label>
 
-                    </div>
-                </dialog>
-            </main>
-            <!-- <div class = ""></div>
-            <div class="">
-                <div>
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
+                <div class="nav-controls">
+                    <!-- Search -->
+                    <label for="search">Search Game:</label>
+                    <input type="text" id="search" placeholder="Type title...">
+
+                    <!-- Prive filter -->
+                    <label for="maxPrice">Max Price ($<span id="price-val">60</span>):</label>
+                    <input type="range" id="maxPrice" min="0" max="60" value="60" step="5">
+
+                    <!-- Dark Mode -->
+                    <button type="button" id="darkMode">🌙 Theme</button>
                 </div>
-                
-            </div>
-            <img src = "" class = " "> -->
-            <script type="module"></script>
-        </body>
+            </nav>
+        </header>
+        <main>
+            <section id="games-grid"></section>
+            <dialog id="game-modal">
+                <button type="button" id="closeInfoProtonDB" aria-label="Close modal">&times;</button>
+                <div id="modal-body">
+                </div>
+            </dialog>
+        </main>
+        <footer>
+            <p>GamerVault Hub &copy; 2026 — Version 1.1</p>
+        </footer>
+        <script type="module" src="src/js/app.js"></script>
+    </body>
 </html>
